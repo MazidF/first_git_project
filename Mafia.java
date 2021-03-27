@@ -37,4 +37,12 @@ public abstract class Mafia extends Player{
         super.setDead();
         Mafia.numberOfMafia--;
     }
+
+    public static int getMafiasLength() {
+        return Mafia.mafias.length;
+    }
+
+    public static Mafia[] getMafias() {
+        return mafias;
+    }
 }
